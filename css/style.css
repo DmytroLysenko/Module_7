@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0px;
+  padding: 0px;
+
+  word-spacing: 0;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+/*  HEADER   */
+
+/*  MAIN     */
+
+/*  FOOTER   */
