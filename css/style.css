@@ -75,7 +75,7 @@ body {
   color: #fed136;
 }
 
-/*  MAIN     */
+/*  MAIN  SERVICES    */
 .main__services {
   padding: 94px 0 120px 0;
 }
@@ -151,53 +151,68 @@ body {
   color: #777777;
 }
 
-/*  FOOTER   */
-.footer {
+/*  MAIN CONTACT   */
+.main__contact {
   padding: 94px 0 20px 0;
   background-color: #222222;
 }
-.footer .wrapper {
+
+.main__contact .wrapper {
   background-image: url(../img/Map_Image.png);
   background-position: right bottom;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.footer .section_title > span {
+.main__contact .section_title > span {
   color: #fff;
 }
 
-.footer__form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  padding-bottom: 100px;
+/*  FORM   */
 
+.main__contact_form {
+  padding-bottom: 100px;
+  max-width: 940px;
   font-family: "Montserrat", sans-serif;
 }
+.main__contact_list {
+  position: relative;
+}
 
-.footer__form > textarea {
-  resize: none;
-  padding: 20px;
-  border: none;
-  width: 455px;
-  height: 210px;
+.main__contact_item {
+  width: 48.4%;
+  height: 50px;
   border-radius: 2px;
+  background-color: #fff;
+}
+
+.main__contact_item:not(:nth-last-child(-n + 2)) {
+  margin-bottom: 30px;
+}
+
+.main__contact_item:last-child {
   position: absolute;
   top: 0;
   right: 0;
+  height: 100%;
 }
 
-.footer__form > input {
+.main__contact_input {
+  width: 100%;
+  height: 100%;
   padding: 0 20px;
   border: none;
-  width: 455px;
-  height: 50px;
-  border-radius: 2px;
 }
 
-.footer__form *::placeholder {
+.main__contact_input:invalid {
+  outline: 1px solid #f00;
+}
+
+.main__contact_input:valid {
+  outline: 1px solid #0f0;
+}
+
+.main__contact_form *::placeholder {
   font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   line-height: 1.2;
@@ -206,11 +221,8 @@ body {
   color: #bbbbbb;
 }
 
-.footer__form > input:not(:last-of-type) {
-  margin-bottom: 30px;
-}
-
-.footer__form_button {
+.main__contact_button {
+  display: block;
   padding: 0;
   border: none;
   border-radius: 2px;
