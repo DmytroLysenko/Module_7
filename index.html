@@ -74,45 +74,34 @@
           </h2>
           <form action="#" method="GET" class="main__contact_form">
             <div class="main__contact_list">
-              <div class="main__contact_item">
+              <div>
                 <input
                   class="main__contact_input"
                   type="text"
                   name="name"
                   placeholder="Your name *"
-                  autocomplete="off"
                   required
                 />
-              </div>
-              <div class="main__contact_item">
                 <input
                   class="main__contact_input"
                   type="email"
                   name="mail"
                   placeholder="Your e-mail *"
-                  autocomplete="off"
                   required
                 />
-              </div>
-              <div class="main__contact_item">
                 <input
                   class="main__contact_input"
                   type="text"
                   name="subject"
-                  autocomplete="off"
                   placeholder="Subject"
                 />
               </div>
-              <div class="main__contact_item">
-                <input
-                  class="main__contact_input main__contact_form_massage"
-                  type="text"
-                  name="message"
-                  placeholder="Your message *"
-                  autocomplete="off"
-                  required
-                />
-              </div>
+              <textarea
+                class="main__contact_form_massage"
+                name="message"
+                placeholder="Your message *"
+                required
+              ></textarea>
             </div>
             <button class="main__contact_button">Send Message</button>
           </form>
